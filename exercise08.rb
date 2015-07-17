@@ -1,6 +1,6 @@
 # ------------------------------------------------------- #
 # Run as:
-# $ ruby beginner_kadai08.rb
+# $ ruby exercise08.rb
 # ------------------------------------------------------- #
 
 ## レコードフォーマット
@@ -51,7 +51,7 @@ begin
   # 配列の用意
   tours = Array::new
 
-  open('tour-master.dat'.upcase) do |file|
+  open('exercise08_tour-master.txt'.upcase) do |file|
     while line = file.gets
       puts line
       tour = TourRecord::new(line)
@@ -75,7 +75,7 @@ end
 begin
   puts "\n出力:"
 
-  File.open('sysprint.dat'.upcase, 'w') do |file|
+  File.open('exercise08_sysprint_ruby.txt'.upcase, 'w') do |file|
 
     # 見出し行
     header = format("%10s", "ﾂｱｰﾒｲ") \

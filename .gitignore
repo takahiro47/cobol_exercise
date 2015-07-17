@@ -1,0 +1,9 @@
+# general
+.gitignore
+.DS_Store
+*.h
+*.c
+
+# backup
+*~
+*.bak

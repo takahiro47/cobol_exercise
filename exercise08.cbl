@@ -1,6 +1,6 @@
 *> ------------------------------------------------------- <*
 *> Run as:
-*> $ cobc -x -free -g -debug -Wall beginner_kadai08.cbl; ./beginner_kadai08
+*> $ cobc -x -free -g -debug -Wall exercise08.cbl; ./exercise08
 *> ------------------------------------------------------- <*
 
 *> ***************************************************************************
@@ -17,9 +17,12 @@ ENVIRONMENT DIVISION.
 
   INPUT-OUTPUT SECTION.
   FILE-CONTROL.
-    SELECT TOUR-MASTER-FILE     ASSIGN TO 'TOUR-MASTER.DAT'   *> INFILE   / ツアーマスタファイル
+    *> INFILE   / ツアーマスタファイル
+    SELECT TOUR-MASTER-FILE     ASSIGN TO 'EXERCISE08_TOUR-MASTER.TXT'
       ORGANIZATION IS LINE SEQUENTIAL.
-    SELECT TOUR-CONTRACT-LIST   ASSIGN TO 'SYSPRINT.DAT'      *> SYSPRINT / ツアー契約リスト
+
+    *> SYSPRINT / ツアー契約リスト
+    SELECT TOUR-CONTRACT-LIST   ASSIGN TO 'EXERCISE08_SYSPRINT.TXT'
       ORGANIZATION IS LINE SEQUENTIAL.
 
 
